@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <title>Login | Ministerio de Salud</title>
+</head>
+<body>
+    <img src="images/logo.png" class="logo">
+    <div class="caja-texto">
+        <h1 id="bienvenido">Bienvenido</h1>
+        <p id="mensaje-bienvenida">Este es el servicio digital de descuentos del <strong>Ministerio de Salud de la Ciudad Autónoma de Buenos Aires</strong>. Acá vas a encontrar descuentos de medicamentos en todas las farmacias asociadas.</p>
+    </div>
+    <div class="caja-login">
+		<form name="inicio-de-sesion" action="principal.html" onsubmit="return validar()" method="post">
+			<h1 id="inicia-sesion">Ingresa a tu cuenta</h1>
+			<p id="registrarse">O registrate</p>
+            <br>
+            <p class="mensaje-login">Usuario</p>
+			<input type="text" name="usuario" placeholder="Usuario"/>
+            <p class="mensaje-login">Contraseña</p>
+			<input type="password" name="contraseña" placeholder="Contraseña"/>
+            <br>
+            <input type="submit" value="Ingresar" id="ingresar">
+			<a href="#">No recuerdo mi contraseña</a>
+            <br><hr><br>
+            <button>Registrarme</button>
+		</form>
+	</div>
+    <script>
+        function validar()
+        {
+            var usuario = document.forms["inicio-de-sesion"]["usuario"].value;
+            var contrasenia = document.forms["inicio-de-sesion"]["contraseña"].value;
+            if (isNaN(usuario)) 
+            {
+                alert("El usuario tiene que ser tu DNI");
+                return false;
+            }
+            if (contrasenia.length < 4) 
+            {
+                alert("La contraseña tiene que tener al menos 4 caracteres");
+                return false;
+            }
+            localStorage.setItem("usuario", usuario);
+        }
+    </script>
+</body>
+</html>

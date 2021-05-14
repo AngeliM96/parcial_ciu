@@ -1,0 +1,30 @@
+body {
+    background-color: #086182;
+    font-family: 'Noto Sans';
+    justify-content: center;
+	align-items: center;
+}
+#barra-superior {
+    border-radius: 10px;
+	background-color:white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+    display: flex;
+}
+.buscador {
+    margin-left: 5%;
+}
+input {
+	background-color: #eee;
+    border-radius: 10px;
+    border: 1px;
+	padding: 12px 15px;
+	margin-top: 10px;
+	width: 300px;
+}
+
+.panel-izquierdo {
+    
+}

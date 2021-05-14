@@ -1,0 +1,93 @@
+.logo {
+    position: absolute;
+}
+body {
+    background-color: #1089B5;
+    font-family: 'Noto Sans';
+    justify-content: center;
+	align-items: center;
+    background-image: url("images/background.jpg");
+}
+h1 {
+    font-weight: bold;
+    text-decoration-line: underline;
+    font-family: 'Noto Serif';
+}
+hr {
+    border-color: #132C36;
+    width: 500px;
+}
+
+/* Bienvenida */
+.caja-texto {
+    width: 683px;
+    padding: 2.5%;
+    color: #132C36;
+    position: absolute;
+	height: 100%;
+}
+#bienvenido {
+    margin-top: 100px;
+    font-size: 56px;
+}
+#mensaje-bienvenida {
+    font-size: 30px;
+}
+
+/* Login */
+.caja-login {
+    padding: 2.5%;
+    position: absolute;
+	left: 50%;
+	width: 683px;
+	height: 100%;
+}
+#inicia-sesion {
+    font-size: 32px;
+}
+#registrarse {
+    font-size: 20px;
+    margin-top: -25px;
+}
+.mensaje-login {
+    font-size: 24px;
+}
+button {
+	border-radius: 10px;
+	background-color: #FF4B2B;
+	color: #f6f5f7;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+#ingresar {
+	border-radius: 10px;
+	background-color: #FF4B2B;
+	color: #f6f5f7;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 683px;
+	text-align: left;
+    border: 1px solid #132C36;
+    border-radius: 8px;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
