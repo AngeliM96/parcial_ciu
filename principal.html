@@ -16,15 +16,75 @@
 <body>
     <div id="barra-superior">
         <img src="images/logo.png" class="logo">
-        <div class="buscador">
+            <div class="buscador">
             <input type="text" placeholder="Buscar...">
             <i class="fa fa-search" style="font-size: x-large;" aria-hidden="true"></i>
         </div>
-        <div class="panel-izquierdo">
-            <p>Usuario: </p>
-            <i class="fa fa-user" style="font-size: x-large;" aria-hidden="true"></i>
+        <div class="panel-derecho">
+            <button id="boton-usuario">
+                <i class="fa fa-user" style="font-size: x-large; margin-top: 3%;" aria-hidden="true"></i>
+                <p style="margin-left:5%;"> Usuario: </p>
+                <p id="usuario_actual"></p>
+            </button>    
+            <button id="boton-salida" onclick="location.href='index.html'" type="button">
+                <i class="fa fa-sign-out" style="font-size: x-large; margin-top: 3%;" aria-hidden="true"></i>
+                <p style="margin-left:2%;"> Cerrar sesión</p>
+            </button>        
         </div>
-
     </div>
+    <div class="contenedor">
+        <h1>Descuentos de este mes</h2>
+        <hr>
+        <div class="todos-los-descuentos">
+            <div class="descuento" id="descuento1">
+                <h2 class="titulo-descuento">Descuento 30%</h2>
+                <p class="texto-descuento">Amoxicilina</p>
+                <p class="texto-descuento">Farmacia Los Viejitos</p>
+                <p class="texto-descuento">Avenida Siempreviva 123</p>
+                <p class="texto-descuento">Valido hasta: 28/05</p>
+            </div>
+            <div class="descuento" id="descuento2">
+                <h2 class="titulo-descuento">Descuento 45%</h2>
+                <p class="texto-descuento">Alcohol Etilico</p>
+                <p class="texto-descuento">Farmapity</p>
+                <p class="texto-descuento">Lugano 3121</p>
+                <p class="texto-descuento">Valido hasta: 15/05</p>
+            </div>
+            <div class="descuento" id="descuento3">
+                <h2 class="titulo-descuento">Descuento 15%</h2>
+                <p class="texto-descuento">Barbijos</p>
+                <p class="texto-descuento">Perrito Doctor</p>
+                <p class="texto-descuento">Bocayuva 483</p>
+                <p class="texto-descuento">Valido hasta: 21/05</p>
+            </div>
+            <div class="descuento" id="descuento3">
+                <h2 class="titulo-descuento">Descuento 15%</h2>
+                <p class="texto-descuento">Solucion salina</p>
+                <p class="texto-descuento">Perrito Doctor</p>
+                <p class="texto-descuento">Bocayuva 483</p>
+                <p class="texto-descuento">Valido hasta: 21/05</p>
+            </div>
+            <div class="descuento" id="descuento1">
+                <h2 class="titulo-descuento">Descuento 30%</h2>
+                <p class="texto-descuento">Productos  de Higiene</p>
+                <p class="texto-descuento">Farmacia Los Viejitos</p>
+                <p class="texto-descuento">Avenida Siempreviva 123</p>
+                <p class="texto-descuento">Valido hasta: 28/05</p>
+            </div>
+            <div class="descuento" id="descuento2">
+                <h2 class="titulo-descuento">Descuento 45%</h2>
+                <p class="texto-descuento">Desodorantes</p>
+                <p class="texto-descuento">Farmapity</p>
+                <p class="texto-descuento">Lugano 3121</p>
+                <p class="texto-descuento">Valido hasta: 15/05</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var usuarioAux = sessionStorage.getItem('usuario');
+        sessionStorage.removeItem('usuario');
+        sessionStorage.clear();
+        document.getElementById("usuario_actual").textContent = usuarioAux;
+    </script>
 </body>
 </html>

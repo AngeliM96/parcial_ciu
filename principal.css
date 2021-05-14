@@ -1,8 +1,13 @@
 body {
-    background-color: #086182;
+    background-image: linear-gradient(#0b97c9 0%, #145269 100%);
     font-family: 'Noto Sans';
     justify-content: center;
 	align-items: center;
+    height: 900px;
+}
+.logo {
+    height: 65px;
+    width: 238px;
 }
 #barra-superior {
     border-radius: 10px;
@@ -15,6 +20,7 @@ body {
 }
 .buscador {
     margin-left: 5%;
+    margin-top: 1%;
 }
 input {
 	background-color: #eee;
@@ -24,7 +30,67 @@ input {
 	margin-top: 10px;
 	width: 300px;
 }
-
-.panel-izquierdo {
-    
+.panel-derecho {
+    margin-left: 25%;
+    display: inline-block;
+}
+button {
+    border-radius: 5px;
+    background-color: inherit;
+    display: flex;
+    height: 40px;
+    width: 200px;
+}
+#boton-salida {
+    border: 1px solid #B52244;
+}
+#boton-usuario {
+    border: 0px;
+}
+h1 {
+    font-family: 'Noto Sans';
+    margin-left: 6%;
+}
+hr {
+    border-color: black;
+    width: 95%;
+}
+.todos-los-descuentos {
+    padding: 1%;
+    margin-left: 5%;
+    display: inline-grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 3%;
+    row-gap: 3%;
+}
+.descuento {
+    background-color: #81A1C1;
+    padding: 3%;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: #152D36;
+    box-shadow: 5px 5px 10px black;;
+}
+.titulo-descuento {
+    font-size: 30px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+.texto-descuento {
+    font-size: 20px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+#descuento1 {
+    background-image: url("images/descuento1.png");
+    background-size: cover;
+}
+#descuento2 {
+    background-image: url("images/descuento2.jpg");
+    background-size: cover;
+}
+#descuento3 {
+    background-image: url("images/descuento3.jpg");
+    background-size: cover;
 }
